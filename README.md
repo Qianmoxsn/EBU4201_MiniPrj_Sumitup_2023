@@ -30,7 +30,7 @@ So make sure you copy the `img` folder to the folder where `.class` file is loca
 When you run the program, you will see the following interface:
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4mvTN0Ee-LZjWOk1EfqgF0EkWrbdHMHw025KRfl2zUbWXTfHX8MVfbMHZcPIKH-1qd1M34xEACwAF9s4XNqf5ZNSolGAzGZRKuHX5KBRkuyZ6zJf8l_2T2_PQVS5lfyYjAY8QCMwIQ62XsjSz3iZ2m3coKWcEfQksoDw0w5Gvp0GeEQCYHHHrrJUhoIfiDkYnQ?width=512&height=480&cropmode=none" width="512" height="480" />
+<img src="https://dsm04pap003files.storage.live.com/y4mTJtgjWAU-VvSJ0GClzTxHU7Mn1r1T-GzZL2UuNs7vqIVgRM57CoxUws-97Oy0NUT8u48qRsJ0wOw-ZhPohXV8U0i2sZaARg8Zzyk7PSgRnos88i6KbJznIYXoRClIPRq6rZKkeR5BgeKvD3a51xXJbslcOpWLqTT39by5f709_1D9C3CkmwY1fAW25lexFVF?width=570&height=530&cropmode=none" width="570" height="530" />
 </div>
 
 ## Type your input
@@ -41,19 +41,19 @@ And you need to sum them up to get the total number of rabbits and type it in th
 After you type your answer, you can click the `Check` button to check your answer.  
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4m5hurCb-gAv5YBhVzR25y4wE2Aim_-p1PPCcWdF0JAowY_Q6c_ewKcVDjN_ya_1aU_Q0dpMcHctZiX7J0srLFHXn61xALc_6gDsnEiAivJsI79RXy2zVc-z-eaVvTjeMFETZCp3nTS5wKEpzvJjEflNFP2d0-YbCbEU5xKdEy5KoSjV1hc2RWfrJbU1XpL1TR?width=512&height=480&cropmode=none" width="512" height="480" />
+<img src="https://dsm04pap003files.storage.live.com/y4mQtui72YTGcCPhy9AWFR_Kk7eUzG3EHA5vk4I0H45x2i0SD5YioTupU7T0MtL5vpJ-oxLwSP-eqYMvTds8cIo2XnK9C8-uUw_DLzuIuMGgb3YUwsXoraCmJHaDu7KlBFkwwPA7N4AdG8iynmoCWEzS-Ggky-Gb4_mFhPSniSAzHb_iRCEwV--wlZ7flNpNqTi?width=570&height=530&cropmode=none" width="570" height="530" />
 </div>
 
 If your answerer is right, you will see the following interface, and go into the next question:
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4muWv93UM_004FU1__IHeOeweBmQdOodWtS8K2ltWnegrmdqFSRuGyIE7BxQJInPBhhvEJK1b5kKBvcFF-NtwFAUN9pSDcl_u5CmVtu0rC-52r-q1kiii8Fth5KYEocyXaXhyzb9kDDr7nXg-Yw_QM9xv6SVNUJUMFrkDIEXmwZScyLJrYDtfU3CdKG80CmulP?width=512&height=480&cropmode=none" width="512" height="480" />
+<img src="https://dsm04pap003files.storage.live.com/y4mr7Nv2pBeCUSytBZKCF3OFJe7Hf9nWUl48GIG79yxQQxAjlTWwL01H1nfkZn07fOiITmxYDboM_-U5FqH99beeWukNGg4ZBoTC_5oS_Vke5STcvP_b-mGZs5MDgnkz3eBBJu3SuXFBE9ficFMZdkcAeZZiYYNDJrirSv7nxYsoLTOAmGsXWBNWFW6WeJSDa_S?width=570&height=530&cropmode=none" width="570" height="530" />
 </div>
 
 Or your answer is wrong, you will see the following interface, and you can try again:
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4m0BGiCYZD_kMWcEoUnY7sCF0TV_rVFyJY8hXByZYqicDFp-amaT2SMKxX2JpbbLCZu4QG3YKuFhCDTw20w4_N8hWYaW0s04fdDsPQrJKwMRLuEbcEMmNIKxjT1dfJBB8_eikFLrllS-B1JDlIr_q8mdF_WqJVWzEuumsoSFO8uyklO1L9TviVbyWFJBAe_3Ke?width=512&height=480&cropmode=none" width="512" height="480" />
+<img src="https://dsm04pap003files.storage.live.com/y4mlOvOHFrQ2rndg2TZFVE1D18bpS-8nU-dp2diq2mBpDzuNZy4nOI2w6-HeDMaDEEWxTuC_5CfWAqMcYrzz44wgaXR8em2J_BDnup-u0irnzP-ddapA4Y73F6h8QHDZcsE53VhL8o1LrmbAsvOI_EAumW8zGIXXtzt1RCfHB8MTCXotXpxsUFwdQ-ovARA1xQc?width=570&height=530&cropmode=none" width="570" height="530" />
 </div>
 
 # Close the program
