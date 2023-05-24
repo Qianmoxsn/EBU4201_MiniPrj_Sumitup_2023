@@ -1,6 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * A class to build the GUI interface of sum it up.
+ *
+ * @author QIANMO
+ * @version 1.0
+ */
 public class SumItUp extends JFrame {
     private static final String title = "Welcome to Sum It Up!";
     private static final String img_rabbit = "img/rabbit.jpg";
@@ -19,6 +25,9 @@ public class SumItUp extends JFrame {
     private int num_2;
     public Font font = new Font("Consolas", Font.BOLD, 16);
 
+    /**
+     * Constructor of SumItUp class.
+     */
     public SumItUp() {
         setTitle(title);
         setLayout(new BorderLayout());
@@ -38,7 +47,12 @@ public class SumItUp extends JFrame {
         /*************/
     }
 
-
+    /**
+     * Add image to panel.
+     *
+     * @param img_num the number of images(rabbit) to be added
+     * @param panel   which panel to add images
+     */
     public void addImageToPanel(int img_num, JPanel panel) {
         panel.removeAll();
 
@@ -53,21 +67,37 @@ public class SumItUp extends JFrame {
         panel.updateUI();
     }
 
-    public void addInfoLabel(String primary_info_text) {
+    /**
+     * Add info label to frame.
+     *
+     * @param primary_info_text the text to be displayed on the top of the frame
+     */
+    private void addInfoLabel(String primary_info_text) {
         info = new JLabel(primary_info_text);
         info.setHorizontalAlignment(JLabel.CENTER);
         frame.add(info, BorderLayout.NORTH);
     }
 
+    /**
+     * Modify the text of info label.
+     *
+     * @param info_text the text to be modified
+     */
     public void modifyInfoLabel(String info_text) {
         info.setText(info_text);
     }
 
+    /**
+     * Add plus image to the center of the frame.
+     */
     public void addCenterImage() {
         JLabel label_plus = new JLabel(img_plus_icon);
         frame.add(label_plus, BorderLayout.CENTER);
     }
 
+    /**
+     * Add bottom panel to the frame, which contains three text fields and a button.
+     */
     public void addBottomPanel() {
         input_1 = new JTextField();
         input_2 = new JTextField();
@@ -92,6 +122,9 @@ public class SumItUp extends JFrame {
         });
     }
 
+    /**
+     * The method to start a new game.
+     */
     private void newGame() {
         num_1 = frame.randomInt(1, 10);
         num_2 = frame.randomInt(1, 10);
@@ -99,17 +132,30 @@ public class SumItUp extends JFrame {
         frame.addImageToPanel(num_2, frame.panel_right);
     }
 
+    /**
+     * Generate a random integer between min and max.
+     *
+     * @param min
+     * @param max
+     * @return a random integer between min and max
+     */
     public int randomInt(int min, int max) {
         return (int) (Math.random() * (max - min + 1) + min);
     }
 
+    /**
+     * Judge the accuracy of the result.
+     *
+     * @param num_1
+     * @param num_2
+     */
     private void judgeResult(int num_1, int num_2) {
         int valid_result = num_1 + num_2;
         String input1Text = input_1.getText();
         String input2Text = input_2.getText();
         String input3Text = input_3.getText();
-        if (input1Text.equals("") || input2Text.equals("") || input3Text.equals("")) {}
-        else {
+        if (input1Text.equals("") || input2Text.equals("") || input3Text.equals("")) {
+        } else {
             if (input1Text.equals(String.valueOf(num_1)) && input2Text.equals(String.valueOf(num_2)) && input3Text.equals(String.valueOf(valid_result))) {
                 modifyInfoLabel("Correct! Have another go?");
                 input_1.setText("");
