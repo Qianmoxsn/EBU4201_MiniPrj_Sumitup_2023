@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 
 public class SumItUp extends JFrame {
     private static final String title = "Welcome to SumItUp!";
@@ -65,8 +64,7 @@ public class SumItUp extends JFrame {
     }
 
     public void addCenterImage() {
-        ImageIcon img_plus = new ImageIcon(SumItUp.img_plus);
-        JLabel label_plus = new JLabel(img_plus);
+        JLabel label_plus = new JLabel(img_plus_icon);
         frame.add(label_plus, BorderLayout.CENTER);
     }
 
