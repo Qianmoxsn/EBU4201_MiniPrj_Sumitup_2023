@@ -3,8 +3,8 @@ import java.awt.*;
 
 public class SumItUp extends JFrame {
     private static final String title = "Welcome to Sum It Up!";
-    private static final String img_rabbit = "src\\img\\rabbit.jpg";
-    private static final String img_plus = "src\\img\\plus.png";
+    private static final String img_rabbit = "img/rabbit.jpg";
+    private static final String img_plus = "img/plus.png";
     private static final ImageIcon img_rabbit_icon = new ImageIcon(img_rabbit);
     private static final ImageIcon img_plus_icon = new ImageIcon(img_plus);
     private JPanel panel_left;
