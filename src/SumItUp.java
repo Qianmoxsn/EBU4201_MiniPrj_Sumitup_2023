@@ -33,8 +33,8 @@ public class SumItUp extends JFrame {
         add(panel_bottom, BorderLayout.SOUTH);
 
         /*** Test: ***/
-        panel_left.setBackground(Color.pink);
-        panel_right.setBackground(Color.orange);
+//        panel_left.setBackground(Color.pink);
+//        panel_right.setBackground(Color.orange);
         /*************/
     }
 
