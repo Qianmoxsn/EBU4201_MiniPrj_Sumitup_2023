@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class SumItUp extends JFrame {
-    private static final String title = "Welcome to SumItUp!";
+    private static final String title = "Welcome to Sum It Up!";
     private static final String img_rabbit = "src\\img\\rabbit.jpg";
     private static final String img_plus = "src\\img\\plus.png";
     private static final ImageIcon img_rabbit_icon = new ImageIcon(img_rabbit);
@@ -108,14 +108,17 @@ public class SumItUp extends JFrame {
         String input1Text = input_1.getText();
         String input2Text = input_2.getText();
         String input3Text = input_3.getText();
-        if (input1Text.equals(String.valueOf(num_1)) && input2Text.equals(String.valueOf(num_2)) && input3Text.equals(String.valueOf(valid_result))) {
-            modifyInfoLabel("Correct! Have another go?");
-            input_1.setText("");
-            input_2.setText("");
-            input_3.setText("");
-            frame.newGame();
-        } else {
-            modifyInfoLabel("Wrong! Try again!");
+        if (input1Text.equals("") || input2Text.equals("") || input3Text.equals("")) {}
+        else {
+            if (input1Text.equals(String.valueOf(num_1)) && input2Text.equals(String.valueOf(num_2)) && input3Text.equals(String.valueOf(valid_result))) {
+                modifyInfoLabel("Correct! Have another go?");
+                input_1.setText("");
+                input_2.setText("");
+                input_3.setText("");
+                frame.newGame();
+            } else {
+                modifyInfoLabel("Wrong! Try again!");
+            }
         }
     }
 
