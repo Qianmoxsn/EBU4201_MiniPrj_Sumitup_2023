@@ -117,7 +117,7 @@ public class SumItUp extends JFrame {
      *
      * @param primary_info_text the text to be displayed on the top of the frame
      */
-    private void addInfoLabel(String primary_info_text) {
+    public void addInfoLabel(String primary_info_text) {
         info = new JLabel(primary_info_text);
         info.setHorizontalAlignment(JLabel.CENTER);
         frame.add(info, BorderLayout.NORTH);
@@ -135,7 +135,7 @@ public class SumItUp extends JFrame {
     /**
      * Add plus image to the center of the frame.
      */
-    private void addCenterImage() {
+    public void addCenterImage() {
         JLabel label_plus = new JLabel(img_plus_icon);
         frame.add(label_plus, BorderLayout.CENTER);
     }
@@ -181,7 +181,7 @@ public class SumItUp extends JFrame {
     /**
      * The method to start a new game.
      */
-    private void newGame() {
+    public void newGame() {
         num_1 = frame.randomInt(1, 10);
         num_2 = frame.randomInt(1, 10);
         frame.addImageToPanel(num_1, frame.panel_left);
@@ -195,7 +195,7 @@ public class SumItUp extends JFrame {
      * @param max the maximum of the random integer
      * @return a random integer between min and max
      */
-    public int randomInt(int min, int max) {
+    private int randomInt(int min, int max) {
         return (int) (Math.random() * (max - min + 1) + min);
     }
 
