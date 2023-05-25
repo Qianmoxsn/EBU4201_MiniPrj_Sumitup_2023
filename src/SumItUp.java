@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Objects;
 
 /**
  * A class to build the GUI interface of sum it up.
@@ -46,17 +47,17 @@ public class SumItUp extends JFrame {
      */
     private JLabel info;
     /**
-     * The text fields to input the operand 1
+     * The combo box of operand 1
      */
-    private JTextField input_1;
+    private JComboBox<String> input_1;
     /**
-     * The text fields to input the operand 2
+     * The combo box of operand 2
      */
-    private JTextField input_2;
+    private JComboBox<String> input_2;
     /**
-     * The text fields to input the result
+     * The combo box of result
      */
-    private JTextField input_3;
+    private JComboBox<String> input_3;
     /**
      * The frame of the game
      */
@@ -143,13 +144,24 @@ public class SumItUp extends JFrame {
      * Add bottom panel to the frame, which contains three text fields and a button.
      */
     public void addBottomPanel() {
-        input_1 = new JTextField();
-        input_2 = new JTextField();
-        input_3 = new JTextField();
+        input_1 = new JComboBox<>();
+        input_2 = new JComboBox<>();
+        input_3 = new JComboBox<>();
+        input_1.addItem("");
+        input_2.addItem("");
+        input_3.addItem("");
+        for (int i = 1; i <= 10; i++) {
+            input_1.addItem(String.valueOf(i));
+            input_2.addItem(String.valueOf(i));
+            input_3.addItem(String.valueOf(i));
+        }
+        for (int i = 10; i <=20 ; i++) {
+            input_3.addItem(String.valueOf(i));
+        }
         JButton button = new JButton("Check!");
-        input_1.setPreferredSize(new Dimension(30, 25));
-        input_2.setPreferredSize(new Dimension(30, 25));
-        input_3.setPreferredSize(new Dimension(30, 25));
+        input_1.setMaximumSize(new Dimension(50, 30));
+        input_2.setMaximumSize(new Dimension(50, 30));
+        input_3.setMaximumSize(new Dimension(50, 30));
         input_1.setFont(font);
         input_2.setFont(font);
         input_3.setFont(font);
@@ -195,16 +207,19 @@ public class SumItUp extends JFrame {
      */
     private void judgeResult(int num_1, int num_2) {
         int valid_result = num_1 + num_2;
-        String input1Text = input_1.getText();
-        String input2Text = input_2.getText();
-        String input3Text = input_3.getText();
+        String input1Text = Objects.requireNonNull(input_1.getSelectedItem()).toString();
+        String input2Text = Objects.requireNonNull(input_2.getSelectedItem()).toString();
+        String input3Text = Objects.requireNonNull(input_3.getSelectedItem()).toString();
+
         if (input1Text.equals("") || input2Text.equals("") || input3Text.equals("")) {
         } else {
             if (input1Text.equals(String.valueOf(num_1)) && input2Text.equals(String.valueOf(num_2)) && input3Text.equals(String.valueOf(valid_result))) {
                 modifyInfoLabel("Correct! Have another go?");
-                input_1.setText("");
-                input_2.setText("");
-                input_3.setText("");
+                // clear the choice of the three combo boxes
+                input_1.setSelectedIndex(0);
+                input_2.setSelectedIndex(0);
+                input_3.setSelectedIndex(0);
+
                 frame.newGame();
             } else {
                 modifyInfoLabel("Wrong! Try again!");
