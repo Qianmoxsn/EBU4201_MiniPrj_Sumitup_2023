@@ -23,6 +23,14 @@ public class SumItUp extends JFrame {
      */
     private static final String img_plus = "img/plus.png";
     /**
+     * The max number of images per operand.
+     */
+    private static int MAXImg;
+    /**
+     * The max number of images each panel holds.
+     */
+    private final int max_contain;
+    /**
      * The imageicon of rabbit.
      */
     private static final ImageIcon img_rabbit_icon = new ImageIcon(img_rabbit);
@@ -83,8 +91,17 @@ public class SumItUp extends JFrame {
         setLayout(new BorderLayout());
         setLocation(700, 360);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        panel_left = new JPanel(new GridLayout(4, 3));
-        panel_right = new JPanel(new GridLayout(4, 3));
+        int gen_rows;
+        if (MAXImg <= 10) {
+            gen_rows = 2;
+        } else if (MAXImg <= 15) {
+            gen_rows = 3;
+        } else {
+            gen_rows = 4;
+        }
+        panel_left = new JPanel(new GridLayout(gen_rows, 5));
+        panel_right = new JPanel(new GridLayout(gen_rows, 5));
+        max_contain = 5 * gen_rows;
         panel_bottom = new JPanel();
 
         add(panel_left, BorderLayout.WEST);
@@ -105,7 +122,8 @@ public class SumItUp extends JFrame {
             JLabel label = new JLabel(img_rabbit_icon);
             panel.add(label);
         }
-        for (int i = 0; i < (12 - img_num); i++) {
+
+        for (int i = 0; i < (max_contain - img_num); i++) {
             JLabel label = new JLabel("");
             panel.add(label);
         }
@@ -143,19 +161,19 @@ public class SumItUp extends JFrame {
     /**
      * Add bottom panel to the frame, which contains three text fields and a button.
      */
-    public void addBottomPanel() {
+    private void addBottomPanel() {
         input_1 = new JComboBox<>();
         input_2 = new JComboBox<>();
         input_3 = new JComboBox<>();
         input_1.addItem("");
         input_2.addItem("");
         input_3.addItem("");
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= MAXImg; i++) {
             input_1.addItem(String.valueOf(i));
             input_2.addItem(String.valueOf(i));
             input_3.addItem(String.valueOf(i));
         }
-        for (int i = 10; i <=20 ; i++) {
+        for (int i = MAXImg; i <= 2 * MAXImg; i++) {
             input_3.addItem(String.valueOf(i));
         }
         JButton button = new JButton("Check!");
@@ -182,8 +200,8 @@ public class SumItUp extends JFrame {
      * The method to start a new game.
      */
     private void newGame() {
-        num_1 = frame.randomInt(1, 10);
-        num_2 = frame.randomInt(1, 10);
+        num_1 = frame.randomInt(1, MAXImg);
+        num_2 = frame.randomInt(1, MAXImg);
         frame.addImageToPanel(num_1, frame.panel_left);
         frame.addImageToPanel(num_2, frame.panel_right);
     }
@@ -195,7 +213,7 @@ public class SumItUp extends JFrame {
      * @param max the maximum of the random integer
      * @return a random integer between min and max
      */
-    public int randomInt(int min, int max) {
+    private int randomInt(int min, int max) {
         return (int) (Math.random() * (max - min + 1) + min);
     }
 
@@ -233,6 +251,19 @@ public class SumItUp extends JFrame {
      * @param args the arguments, which is not used
      */
     public static void main(String[] args) {
+        // Get the max image count from args
+        if (args.length != 1) {
+            System.out.println("Please input the max image count!");
+            System.exit(1);
+        } else {
+            MAXImg = Integer.parseInt(args[0]);
+        }
+        if (MAXImg < 10 || MAXImg > 20) {
+            System.out.println("max image count should be between 10 and 20!");
+            System.exit(2);
+        }
+
+
         frame = new SumItUp();
         frame.addInfoLabel("Enter two operands, result and click on 'Check!'");
         frame.addCenterImage();
