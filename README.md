@@ -23,7 +23,11 @@ java SumItUp
 > i.e. your folder tree should be like this:
 > ```
 > root(Task x)
-> |- /img
+> |-/ img
+>   |- rabbit.jpg
+>   |- plus.png
+> |-/ Javadoc
+>   |- ...
 > |- run.bat
 > |- SumItUp.java
 > |- README.md
