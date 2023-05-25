@@ -1,17 +1,10 @@
 # Sum It Up User's Guide
 
 ## How to Run
-### 1. use `run.bat`
-We recomand you to use `run.bat` in root folder to run the program.   
-It will automatically compile and run the program.   
-If you want to run the program with your own test case, you can modify the `run.bat` file. The `run.bat` file is as follows:
+### 1. Use `run.bat` (Recommended)
+We recommend you to use `run.bat` in root folder to run the program. It will automatically compile and run the program.
 
-```bat
-javac SumItUp.jav
-java SumItUp
-```
-
-### 2. use `javac` and `java`
+### 2. Use `javac` and `java`
 If you want to run the program with your own test case, you can use `javac` and `java` command to compile and run the program.
     
 ```bat
@@ -26,7 +19,8 @@ java SumItUp
 > |-/ img
 >   |- rabbit.jpg
 >   |- plus.png
-> |-/ Javadoc
+> |-/ Documentation
+>   |- User's Guide.pdf
 >   |- ...
 > |- run.bat
 > |- SumItUp.java
