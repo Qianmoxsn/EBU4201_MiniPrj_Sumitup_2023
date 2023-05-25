@@ -2,14 +2,16 @@
 
 ## How to Run
 ### 1. Use `run.bat` (Recommended)
-We recommend you to use `run.bat` in root folder to run the program. It will automatically compile and run the program.
+We recommend you to use `run.bat` in root folder to run the program. It will automatically compile and run the program with parameter `20`.
+
+
 
 ### 2. Use `javac` and `java`
 If you want to run the program with your own test case, you can use `javac` and `java` command to compile and run the program.
     
 ```bat
 javac SumItUp.java
-java SumItUp
+java SumItUp [the maximum number of operands]
 ```
 
 > Note that your SumItUp.java file should be in the root folder as the `run.bat` file.
