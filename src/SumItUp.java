@@ -8,22 +8,71 @@ import java.awt.*;
  * @version 1.0
  */
 public class SumItUp extends JFrame {
+
+    /**
+     * The title of the frame.
+     */
     private static final String title = "Welcome to Sum It Up!";
+    /**
+     * The path of the image(rabbit).
+     */
     private static final String img_rabbit = "img/rabbit.jpg";
+    /**
+     * The path of the image(plus).
+     */
     private static final String img_plus = "img/plus.png";
+    /**
+     * The imageicon of rabbit.
+     */
     private static final ImageIcon img_rabbit_icon = new ImageIcon(img_rabbit);
+    /**
+     * The imageicon of plus.
+     */
     private static final ImageIcon img_plus_icon = new ImageIcon(img_plus);
-    private JPanel panel_left;
-    private JPanel panel_right;
-    private JPanel panel_bottom;
+    /**
+     * The panel on the left of the frame(WEST)
+     */
+    private final JPanel panel_left;
+    /**
+     * The panel on the right of the frame(EAST)
+     */
+    private final JPanel panel_right;
+    /**
+     * The panel on the bottom of the frame(SOUTH)
+     */
+    private final JPanel panel_bottom;
+    /**
+     * The label to display the info(NORTH)
+     */
     private JLabel info;
+    /**
+     * The text fields to input the operand 1
+     */
     private JTextField input_1;
+    /**
+     * The text fields to input the operand 2
+     */
     private JTextField input_2;
+    /**
+     * The text fields to input the result
+     */
     private JTextField input_3;
+    /**
+     * The frame of the game
+     */
     private static SumItUp frame;
+    /**
+     * The number of images(rabbit) on the left(random)
+     */
     private int num_1;
+    /**
+     * The number of images(rabbit) on the right(random)
+     */
     private int num_2;
-    public Font font = new Font("Consolas", Font.BOLD, 16);
+    /**
+     * The font of the text.
+     */
+    private final Font font = new Font("Consolas", Font.BOLD, 16);
 
     /**
      * Constructor of SumItUp class.
@@ -40,11 +89,6 @@ public class SumItUp extends JFrame {
         add(panel_left, BorderLayout.WEST);
         add(panel_right, BorderLayout.EAST);
         add(panel_bottom, BorderLayout.SOUTH);
-
-        /*** Test: ***/
-//        panel_left.setBackground(Color.pink);
-//        panel_right.setBackground(Color.orange);
-        /*************/
     }
 
     /**
@@ -53,7 +97,7 @@ public class SumItUp extends JFrame {
      * @param img_num the number of images(rabbit) to be added
      * @param panel   which panel to add images
      */
-    public void addImageToPanel(int img_num, JPanel panel) {
+    private void addImageToPanel(int img_num, JPanel panel) {
         panel.removeAll();
 
         for (int i = 0; i < img_num; i++) {
@@ -83,14 +127,14 @@ public class SumItUp extends JFrame {
      *
      * @param info_text the text to be modified
      */
-    public void modifyInfoLabel(String info_text) {
+    private void modifyInfoLabel(String info_text) {
         info.setText(info_text);
     }
 
     /**
      * Add plus image to the center of the frame.
      */
-    public void addCenterImage() {
+    private void addCenterImage() {
         JLabel label_plus = new JLabel(img_plus_icon);
         frame.add(label_plus, BorderLayout.CENTER);
     }
@@ -135,8 +179,8 @@ public class SumItUp extends JFrame {
     /**
      * Generate a random integer between min and max.
      *
-     * @param min
-     * @param max
+     * @param min the minimum of the random integer
+     * @param max the maximum of the random integer
      * @return a random integer between min and max
      */
     public int randomInt(int min, int max) {
@@ -146,8 +190,8 @@ public class SumItUp extends JFrame {
     /**
      * Judge the accuracy of the result.
      *
-     * @param num_1
-     * @param num_2
+     * @param num_1 the number of images(rabbit) on the left(random)
+     * @param num_2 the number of images(rabbit) on the right(random)
      */
     private void judgeResult(int num_1, int num_2) {
         int valid_result = num_1 + num_2;
@@ -168,6 +212,11 @@ public class SumItUp extends JFrame {
         }
     }
 
+    /**
+     * The main method to start the game.
+     *
+     * @param args the arguments, which is not used
+     */
     public static void main(String[] args) {
         frame = new SumItUp();
         frame.addInfoLabel("Enter two operands, result and click on 'Check!'");

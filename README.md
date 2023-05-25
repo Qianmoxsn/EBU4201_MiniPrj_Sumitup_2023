@@ -7,9 +7,7 @@ It will automatically compile and run the program.
 If you want to run the program with your own test case, you can modify the `run.bat` file. The `run.bat` file is as follows:
 
 ```bat
-javac src\SumItUp.jav
-move src\SumItUp.class .\SumItUp.class
-dir
+javac SumItUp.jav
 java SumItUp
 ```
 
@@ -17,14 +15,19 @@ java SumItUp
 If you want to run the program with your own test case, you can use `javac` and `java` command to compile and run the program.
     
 ```bat
-javac src\SumItUp.java
+javac SumItUp.java
 java SumItUp
-``` 
-**Note that** you may lose the image of the program if you use this method.  
-So make sure you copy the `img` folder to the folder where `.class` file is located.
+```
 
-> i.e.   
-> You can move the `SumItUp.class` file to the root folder, and then run the program with `java SumItUp` command.
+> Note that your SumItUp.java file should be in the root folder as the `run.bat` file.
+> i.e. your folder tree should be like this:
+> ```
+> root(Task x)
+> |- /img
+> |- run.bat
+> |- SumItUp.java
+> |- README.md
+> ```
 
 # How to Use
 When you run the program, you will see the following interface:
