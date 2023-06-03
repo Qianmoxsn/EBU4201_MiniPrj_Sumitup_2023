@@ -6,7 +6,7 @@ We recommend you to use `run.bat` in root folder to run the program. It will aut
 
 ### 2. Use `javac` and `java`
 If you want to run the program with your own test case, you can use `javac` and `java` command to compile and run the program.
-
+    
 ```bat
 javac SumItUp.java
 java SumItUp
@@ -26,7 +26,6 @@ java SumItUp
 > |- SumItUp.java
 > |- README.md
 > ```
-
 
 # How to Use
 When you run the program, you will see the following interface:
