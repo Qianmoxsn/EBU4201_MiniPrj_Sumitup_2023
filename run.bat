@@ -1,3 +1,3 @@
 javac SumItUp.java
 
-java SumItUp
+java SumItUp 20
