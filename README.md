@@ -31,30 +31,30 @@ java SumItUp
 When you run the program, you will see the following interface:
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4mTJtgjWAU-VvSJ0GClzTxHU7Mn1r1T-GzZL2UuNs7vqIVgRM57CoxUws-97Oy0NUT8u48qRsJ0wOw-ZhPohXV8U0i2sZaARg8Zzyk7PSgRnos88i6KbJznIYXoRClIPRq6rZKkeR5BgeKvD3a51xXJbslcOpWLqTT39by5f709_1D9C3CkmwY1fAW25lexFVF?width=570&height=530&cropmode=none" width="570" height="530" />
+<img src="https://dsm04pap003files.storage.live.com/y4m9lZ0TgYyZIfc8g7-c07sAViQXbPxDDqv7ZPWi1wG8ablJi__M82EpozW1g3R2VurEKbID2cSb0DniIYOJiVonZdydXkarD588xGkO_ayq3Hn8IN-ijy8QhjrJ2fIhrsOptuoWt4SvRRDSTSlloZI2UM517RZTsKDUw5qLeDdaOCHI2Fw_EEAfIYxBE8SpWr9?width=570&height=530&cropmode=none" width="570" height="190" />
 </div>
 
-## Type your input
-You are supposed to type your input in the text field. The number depends on the number of rabbits displayed on both sides.  
-And you need to sum them up to get the total number of rabbits and type it in the third text field.
+## Select your input
+You are supposed to select your input in the text field. The number depends on the number of rabbits displayed on both sides.  
+And you need to sum them up to get the total number of rabbits and select it in the third text field.
 
 ## Check your answer
-After you type your answer, you can click the `Check` button to check your answer.  
+After you select your answer, you can click the `Check` button to check your answer.  
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4mQtui72YTGcCPhy9AWFR_Kk7eUzG3EHA5vk4I0H45x2i0SD5YioTupU7T0MtL5vpJ-oxLwSP-eqYMvTds8cIo2XnK9C8-uUw_DLzuIuMGgb3YUwsXoraCmJHaDu7KlBFkwwPA7N4AdG8iynmoCWEzS-Ggky-Gb4_mFhPSniSAzHb_iRCEwV--wlZ7flNpNqTi?width=570&height=530&cropmode=none" width="570" height="530" />
+<img src="https://dsm04pap003files.storage.live.com/y4m5csxyIM2--Ax9JAJeugD5VBQkucj03_rWiQ4jYDSYDoUj81-mHcyMtGu3hwGBAEuRENqwihKFRFr9TIK8TmXPdX3K4jE5qHEHV5oFxMjbkBh3NxZZd2Y7UxCE7OaPhGjzS1xeBrEvKpIk6XIAELANULv46VfQELPE5Zzjvd6jHBzp4VRclFPFllqVIZWmJ14?width=570&height=530&cropmode=none" width="570" height="190" />
 </div>
 
 If your answerer is right, you will see the following interface, and go into the next question:
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4mr7Nv2pBeCUSytBZKCF3OFJe7Hf9nWUl48GIG79yxQQxAjlTWwL01H1nfkZn07fOiITmxYDboM_-U5FqH99beeWukNGg4ZBoTC_5oS_Vke5STcvP_b-mGZs5MDgnkz3eBBJu3SuXFBE9ficFMZdkcAeZZiYYNDJrirSv7nxYsoLTOAmGsXWBNWFW6WeJSDa_S?width=570&height=530&cropmode=none" width="570" height="530" />
+<img src="https://dsm04pap003files.storage.live.com/y4m28_N-gsYXTxHZDWh92FcsGk6nXu4qYmzWvC1EAv8ucuBSg8ntJWDefughheNuypbTKf10tI472L9vO4P_abgwSwwl7alEBF5uO3dz8VWIPbdNujPBArNISjsfpYvqqT8La5kR9JgDEYPkZbKo29zekdoueum4olcck6YFveWjlpMk6SrEJfBEXnSHlqYQlyR?width=570&height=530&cropmode=none" width="570" height="190" />
 </div>
 
 Or your answer is wrong, you will see the following interface, and you can try again:
 
 <div align=center>
-<img src="https://dsm04pap003files.storage.live.com/y4mlOvOHFrQ2rndg2TZFVE1D18bpS-8nU-dp2diq2mBpDzuNZy4nOI2w6-HeDMaDEEWxTuC_5CfWAqMcYrzz44wgaXR8em2J_BDnup-u0irnzP-ddapA4Y73F6h8QHDZcsE53VhL8o1LrmbAsvOI_EAumW8zGIXXtzt1RCfHB8MTCXotXpxsUFwdQ-ovARA1xQc?width=570&height=530&cropmode=none" width="570" height="530" />
+<img src="https://dsm04pap003files.storage.live.com/y4mJHcxunYQDj3HiB4NO-AG6IU20cO7GxCQkwZuv4byAWjMOrKQ4DqPx8j8IuHdB--E3zrbGiIGqbK1l65EPnrbZDi02iTLClJQ4goDtWDa7-iQX5yZQF3aLG_Atow1FbL5cXcaumQ_jTsxmWr_j8U3en3wyadQEIp2SEvENeq_3Qt7z5KfmG-r1N9fHD4IuYFi?width=570&height=530&cropmode=none" width="570" height="190" />
 </div>
 
 # Close the program
