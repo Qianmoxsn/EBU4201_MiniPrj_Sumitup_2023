@@ -173,7 +173,7 @@ public class SumItUp extends JFrame {
             input_2.addItem(String.valueOf(i));
             input_3.addItem(String.valueOf(i));
         }
-        for (int i = MAXImg; i <= 2 * MAXImg; i++) {
+        for (int i = MAXImg + 1; i <= 2 * MAXImg; i++) {
             input_3.addItem(String.valueOf(i));
         }
         JButton button = new JButton("Check!");
