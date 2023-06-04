@@ -155,7 +155,7 @@ public class SumItUp extends JFrame {
             input_2.addItem(String.valueOf(i));
             input_3.addItem(String.valueOf(i));
         }
-        for (int i = 10; i <=20 ; i++) {
+        for (int i = 11; i <=20 ; i++) {
             input_3.addItem(String.valueOf(i));
         }
         JButton button = new JButton("Check!");
