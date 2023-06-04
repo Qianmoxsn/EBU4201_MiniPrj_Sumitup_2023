@@ -1,8 +1,8 @@
 # Sum It Up User's Guide
 
 ## How to Run
-### 1. Use `run.bat` (Recommended)
-We recommend you to use `run.bat` in root folder to run the program. It will automatically compile and run the program with parameter `20`.
+### 1. Use `run.bat` or `run.sh` (Recommended)
+We recommend you to use `run.bat` (Windows) or `run.sh` (Linux) in root folder to run the program. It will automatically compile and run the program with parameter `20`.
 
 
 
