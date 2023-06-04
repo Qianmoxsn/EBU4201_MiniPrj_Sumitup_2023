@@ -1,8 +1,8 @@
 # Sum It Up User's Guide
 
 ## How to Run
-### 1. Use `run.bat` (Recommended)
-We recommend you to use `run.bat` in root folder to run the program. It will automatically compile and run the program.
+### 1. Use `run.bat` or `run.sh` (Recommended)
+We recommend you to use `run.bat` (Windows) or `run.sh` (Linux) in root folder to run the program. It will automatically compile and run the program.
 
 ### 2. Use `javac` and `java`
 If you want to run the program with your own test case, you can use `javac` and `java` command to compile and run the program.
